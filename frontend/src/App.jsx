@@ -12,7 +12,6 @@ function App() {
       <div className="min-h-screen bg-gray-900 text-gray-100 font-sans">
         <Header />
         <Routes>
-          {/* Ruta principal que muestra toda la landing */}
           <Route path="/" element={
             <main>
               <Hero />
@@ -21,9 +20,8 @@ function App() {
               <Contact />
             </main>
           } />
-          {/* Rutas individuales para las nuevas pestañas */}
-          <Route path="/hotel" element={<div className="p-10"><AboutHotel /></div>} />
-          <Route path="/habitaciones" element={<div className="p-10"><Booking /></div>} />
+          <Route path="/acerca" element={<div className="p-10"><AboutHotel /></div>} />
+          <Route path="/reservas" element={<div className="p-10"><Booking /></div>} />
           <Route path="/contacto" element={<div className="p-10"><Contact /></div>} />
         </Routes>
         <Footer />
